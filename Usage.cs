@@ -16,6 +16,7 @@ namespace ClientUsage
             }
             catch (System.Exception ex)
             {
+                // Call The AppCenter CrashReport Helper Like Below
                 Report.SendReport(ex);
                 // Handle Exception
             }
