@@ -6,6 +6,7 @@ namespace CrashReportLibrary
     {
         public static string GetKey(string Env , string Country)
         {
+            // Best practice is to host the key somewhere in a data store . called in a secure manner with both parameters . 
             if(Env == Constant.Env.BlueGreen)
                 return "SampleKey-72b3-41be-b01a-2152d70448c7";
             if (Env == Constant.Env.Dev)
